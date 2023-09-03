@@ -1,0 +1,6 @@
+fl=float(input("Enter length of floor: "))
+fb=float(input("Enter breadth of floor: "))
+tl=float(input("Enter length of tile: "))
+tb=float(input("Enter breadth of tile: "))
+nt=((fl*fb)/(tl*tb))
+print("Number of rectangular tiles required:",nt)

@@ -26,8 +26,9 @@ class bmi:
         ind=self.lbox.curselection()
         self.lbox.delete(ind)
     def delallitm(self):
-        self.lbox.delete(0,END)
-    
+        sunot=messagebox.askquestion("Warnning","Want to empty Your to do list")
+        if sunot=="yes":
+            self.lbox.delete(0,END)
 root=Tk()
 exe=bmi(root)
 root.mainloop()

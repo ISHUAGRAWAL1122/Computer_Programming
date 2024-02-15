@@ -7,7 +7,7 @@ class Calculator:
         self.main_win.minsize(245,337)
         self.main_win.maxsize(245,337)
         self.eq=StringVar()
-        self.entry=Entry(self.main_win,textvariable=self.eq,state= "disabled",font=13).grid(row=0,column=0,columnspan=5,ipadx=24,ipady=7,pady=5)
+        self.entry=Entry(self.main_win,textvariable=self.eq,state= "disabled",font=13,justify="right").grid(row=0,column=0,columnspan=5,ipadx=24,ipady=7,pady=5)
         Button(self.main_win,text="C",command=self.clr,height=2,width=5,font=13,activebackground="#f00000").grid(row=1,column=0,padx=3,pady=4)
         Button(self.main_win,text="(",command=lambda:self.bpress("("),height=2,width=5,font=13,activebackground="#a9a9a9").grid(row=1,column=1,padx=3,pady=4)
         Button(self.main_win,text=")",command=lambda:self.bpress(")"),height=2,width=5,font=13,activebackground="#a9a9a9").grid(row=1,column=2,padx=3,pady=4)
